@@ -17,7 +17,8 @@ function App() {
   return (
     <div className="App">
       <h2>Basic example of react redux</h2>
-      <h4>Author : - {user && user.name}</h4>
+      <h3>Author: - {user && user.name}</h3>
+      <h4>Contact:- harshilgoti@gmail.com</h4>
       <h5>Note:- Open console and see response</h5>
     </div>
   );
