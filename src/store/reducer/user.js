@@ -1,7 +1,7 @@
 import {
-  FETCH_ALL_USER_LIST,
-  FETCH_ALL_USER_LIST_SUCCESS,
-  FETCH_ALL_USER_LIST_FAILURE,
+  FETCH_USER,
+  FETCH_USER_SUCCESS,
+  FETCH_USER_FAILURE,
 } from "../action/actionType";
 
 let initialState = {
@@ -12,19 +12,19 @@ let initialState = {
 
 const user = (state = initialState, action) => {
   switch (action.type) {
-    case FETCH_ALL_USER_LIST:
+    case FETCH_USER:
       return {
         ...state,
         userLoading: true,
         userError: "",
       };
-    case FETCH_ALL_USER_LIST_SUCCESS:
+    case FETCH_USER_SUCCESS:
       return {
         ...state,
         userLoading: false,
-        user: { name: "harshil" },
+        user: { name: "Harshil goti" },
       };
-    case FETCH_ALL_USER_LIST_FAILURE:
+    case FETCH_USER_FAILURE:
       return {
         ...state,
         userLoading: false,

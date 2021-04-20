@@ -1,26 +1,26 @@
 import {
-  FETCH_ALL_USER_LIST,
-  FETCH_ALL_USER_LIST_SUCCESS,
-  FETCH_ALL_USER_LIST_FAILURE,
+  FETCH_USER,
+  FETCH_USER_SUCCESS,
+  FETCH_USER_FAILURE,
 } from "./actionType";
 
 export const fetchUser = (payload) => {
   return {
-    type: FETCH_ALL_USER_LIST,
+    type: FETCH_USER,
     payload: payload,
   };
 };
 
 export const fetchUserSuccess = (payload) => {
   return {
-    type: FETCH_ALL_USER_LIST_SUCCESS,
+    type: FETCH_USER_SUCCESS,
     payload: payload,
   };
 };
 
 export const fetchUserFailure = (payload) => {
   return {
-    type: FETCH_ALL_USER_LIST_FAILURE,
+    type: FETCH_USER_FAILURE,
     payload: payload,
   };
 };
